@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE teachers[
+<!ELEMENT teachers (teacher+)>        <!--代表可以有1个或多个老师-->
+<!ELEMENT teacher (name, course+)>    <!--代表可以有1个或多个课程-->
+<!ELEMENT name (#PCDATA)>             <!--代表老师名字是字符串-->
+<!ELEMENT course (name, submodule)>   <!--代表什么自己体会-->
+
+<!ELEMENT submodule (name, year+)>
+<!ELEMENT year (#PCDATA)>
+
+
+<!ATTLIST teacher
+	joiningDate CDATA #REQUIRED
+	jobRole CDATA #IMPLIED
+>                                     <!--代表老师参加工作时间属性是必须的、头衔属性不是必须的-->
+]>
+
+
+<teachers> 
+  <teacher joiningDate="2018" jobRole="Professor"> 
+    <name>Alexandra Cristea</name>  
+    <course> 
+      <name>Software, Systems and Applications III</name>  
+      <submodule> 
+        <name>Advanced Databases</name>  
+        <year>2018-2019</year>  
+        <year>2019-2020</year> 
+      </submodule> 
+    </course>  
+    <course> 
+      <name>Software, Systems and Applications IV</name>  
+      <submodule> 
+        <name>Semantic Web</name>  
+        <year>2018-2019</year>  
+        <year>2019-2020</year> 
+      </submodule> 
+    </course> 
+  </teacher> 
+</teachers>

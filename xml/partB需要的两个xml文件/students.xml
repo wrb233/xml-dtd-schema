@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<students year="2019-2020">
+	<student enrolmentDate="2017">
+		<name>John Smith</name>
+		<course>
+			<name>Software, Systems and Applications III</name>
+			<submodule>Advanced Databases</submodule>
+			<submodule>Web Technology</submodule>
+		</course>
+		<course>Computing Methodologies III</course>
+	</student>
+	<student enrolmentDate="2016">
+		<firstname>Anna</firstname>
+		<lastname>Brown</lastname>
+		<course>
+			<name>Software, Systems and Applications IV</name>
+			<submodule>Semantic Web</submodule>
+		</course>
+		<course>Computing Methodologies IV</course>
+	</student>
+	
+	<student enrolmentDate="2017">
+		<firstname>Zhang</firstname>
+		<lastname>San</lastname>
+		<course>
+			<name>Software, Systems and Applications III</name>
+			<submodule>Advanced Databases</submodule>
+			<submodule>Web Technology</submodule>
+		</course>
+		<course>Computing Methodologies III</course>
+	</student>
+	
+
+</students>
